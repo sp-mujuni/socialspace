@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif !important;
+}
+
+/*Styling the  navigation pane*/
+nav {
+    padding: 10px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 15px rgba(73, 146, 194, 0.856);
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav h3 span{
+    color: #fff;
+}
+
+.flex-div {
+    background-color: whitesmoke;
+    display: flex;
+}
+    
+.nav-left h3{
+    padding: 0.5rem;
+    margin: 0 auto;
+    background-color: rgb(73, 146, 194);
+    color: black;
+    border: 1px solid black;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.nav-right a{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.active{
+    font-weight: bold;
+}
+
+/*Styling the main body of website*/
+.container{
+    display: flex;
+}
+.main-left{
+    width: 200px;
+}
+.main-center{
+    margin-top: 2rem;
+    width: 800px;
+    padding: 1rem;
+    border-style:outset;
+    border-radius: 15px;
+}
+.main-right{
+    width: 400px;
+}
+.line{
+    background-color: rgb(73, 146, 194);
+    height: 2px;
+}
