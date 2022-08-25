@@ -52,21 +52,26 @@ nav h3 span{
 /*Styling the main body of website*/
 .container{
     display: flex;
+    margin-left: 3rem;
 }
-.main-left{
-    width: 200px;
-}
-.main-center{
+
+.heading{
     margin-top: 2rem;
-    width: 800px;
-    padding: 1rem;
-    border-style:outset;
+}
+
+.main-center table{
+    margin-top: 1rem;
+    width: 1200px;
+    border:1px dashed rgb(73, 146, 194);
     border-radius: 15px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-align: center;
 }
-.main-right{
-    width: 400px;
+
+.main-center table tbody td{
+    border-bottom: 1px solid rgb(73, 146, 194);
 }
-.line{
-    background-color: rgb(73, 146, 194);
-    height: 2px;
-}
+
