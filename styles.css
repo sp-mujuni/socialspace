@@ -1,0 +1,258 @@
+/* ====== ROOT VARIABLES FOR COLORS ======= */
+:root{
+    --color-primary: rgb(36, 147, 238);
+    --color-primary-text: rgb(66, 63, 63);
+    --color-dark: #181a1e;
+    --color-light: rgb(250, 250, 250);
+    --color-background: rgb(250, 250, 250);
+}
+
+/*====== DARK THEME COLOR VARIABLES =======*/
+.dark-theme-variables{
+    --color-background: #181a1e !important;
+    --color-light: white !important;
+    --color-primary-text: #edeffd !important;
+    --color-primary: rgb(36, 147, 238) !important;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-background);
+    /* position: relative; */
+
+}
+
+html,
+body {
+    color: var(--color-primary-text);
+}
+
+/* =========== */
+/*   HEADER    */
+/* =========== */
+.headers {
+    padding: 1rem 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: var(--color-background);
+    border-bottom: 1px solid rgb(150, 147, 147);
+}
+
+.header--left-1{
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--color-primary);
+}
+
+.header--left{
+    display: flex;
+    margin-left: 2rem;
+}
+
+.header--left-2{
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-left: 1.3rem;
+    border: 1px solid var(--color-primary);
+}
+
+.header--left:hover{
+    cursor: pointer;
+}
+
+.header--right{
+    margin-right: 1.2rem;
+    display: flex;
+}
+
+.right--1{
+    display: flex;
+    margin-right: 1rem;
+}
+
+.right--1:hover{
+    cursor: pointer;
+}
+
+.right--2{
+    padding: 0.5rem;
+    border-radius: 5px;
+
+}
+
+.light{
+    margin-right: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: var(--color-light);
+    color: rgb(66, 63, 63);
+
+}
+
+.dark{
+    background-color: var(--color-dark);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.whole{
+    background-color: var(--color-primary);
+    padding: 0.5rem;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: black;
+}
+
+.last{
+    color: white;
+}
+
+/* ======== */
+/*   FORM   */
+/* ======== */
+
+/* hide form */
+.hide{
+    visibility: hidden;
+}
+
+.form--container {
+    width: 700px;
+    margin: 0 auto;
+    border-style:outset;
+    border-radius: 15px;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+.form-background{
+    background-color: var(--color-background);
+    border-radius: 15px;
+}
+
+.form--header {
+    padding: 1rem 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form--input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+input[type='text'] {
+    padding: 0.4rem 1rem;
+    outline: none;
+    line-height: 1;
+    margin: 0.4rem;
+    border: 1px dashed gray;
+    width: 70%;
+}
+
+input[type='file'] {
+    padding: 0.4rem 1rem;
+    outline: none;
+    margin: 0.4rem;
+    width: 70%;
+}
+
+form button {
+    padding: 0.6rem;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    margin: 1rem;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 5px;
+}
+
+.font-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.font{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.font-color{
+    margin-right: 14rem;
+}
+
+.font-color:hover{
+    cursor: pointer;
+}
+
+.font-type{
+    margin-left: 14rem;
+}
+
+.font-type:hover{
+    cursor: pointer;
+}
+
+/* ============ */
+/* TABLE STYLES */
+/* ============ */
+
+.table--container {
+    margin-top: 3rem;
+    
+}
+
+table {
+    margin: auto;
+    width: 70%;
+}
+
+table thead tr td {
+    padding: 1rem;
+    border: 1px solid var(--color-primary);
+    width: 10%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: medium;
+}
+
+table tbody tr td {
+    padding: 0.4rem;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    text-align: center;
+    font-weight: bolder;
+    font-size: medium;
+    color: var(--color-primary-text);
+}
+
+td.actions {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+td.actions .delete:hover {
+    cursor: pointer;
+}
+
+
+
