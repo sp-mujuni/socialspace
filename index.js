@@ -22,23 +22,18 @@
             let image = new Image();
             image.src = `${item.image}`
             const trContent = `
-                <td id='tcol'>${item.education}</td>
-                <td id='tcol1'>${item.statement}</td>
-                <td><img src='./${image}'></td>
-                <td id ='tcol2'>${item.hobbies}</td>
+                <td class='tdata'>${item.education}</td>
+                <td class='tdata'>${item.statement}</td>
+                <td><img src='${image}'></td>
+                <td class ='tdata'>${item.hobbies}</td>
                 <td class='actions'><div class='delete'>Delete profile</div></td>
             `;
-
-            education.value = '';
-            statement.value = '';
-            image.value = '';
-            hobbies.value = '';
             
             tr.innerHTML = trContent;
             tb.appendChild(tr)
             
-        })
-        
+        });
+
     }
 
     /*====== TOGGLE BACKGROUND ==========*/
@@ -65,13 +60,13 @@
     })
     
       /*====== DELETE PROFILE ==========*/
-      tb.addEventListener('click', function(del) {
-        if(del.target.classList.contains('delete')) {
-            del.target.parentElement.parentElement.remove();
+      tb.addEventListener('click', function(e) {
+        if(e.target.classList.contains('delete')) {
+            e.target.parentElement.parentElement.remove();
         }
     })
 
-    /*====== FONT COLORs =========*/
+    /*====== FONT COLORS =========*/
     const fontRedToggler = document.getElementById("red");
 
     fontRedToggler.addEventListener('click', function() {
@@ -84,6 +79,16 @@
     fontRedTableToggler.addEventListener('click', function() {
     const tablered = document.getElementById('table');
     tablered.style.color='red';
+    })
+
+    const fontRedTdataToggler = document.getElementById("red");
+
+    fontRedTdataToggler.addEventListener('click', function() {
+        const tdata = document.querySelectorAll('.tdata');
+        tdata.forEach((data) => {
+            data.style.color='red';
+        })
+        
     })
     
     const fontgreenToggler = document.getElementById("green");
@@ -100,6 +105,16 @@
     tablegreen.style.color='green';
     })
 
+    const fontGreenTdataToggler = document.getElementById("green");
+
+    fontGreenTdataToggler.addEventListener('click', function() {
+        const tdata = document.querySelectorAll('.tdata');
+        tdata.forEach((data) => {
+            data.style.color='green';
+        })
+        
+    })
+
     const fontblackToggler = document.getElementById("orange");
 
     fontblackToggler.addEventListener('click', function() {
@@ -112,6 +127,16 @@
     fontOrangeTableToggler.addEventListener('click', function() {
     const tableorange = document.getElementById('table');
     tableorange.style.color='orange';
+    })
+
+    const fontOrangeTdataToggler = document.getElementById("orange");
+
+    fontOrangeTdataToggler.addEventListener('click', function() {
+        const tdata = document.querySelectorAll('.tdata');
+        tdata.forEach((data) => {
+            data.style.color='orange';
+        })
+        
     })
 
     /*====== FONT TYPES =========*/
