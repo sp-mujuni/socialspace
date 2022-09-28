@@ -267,5 +267,10 @@ td.actions .delete:hover {
     cursor: pointer;
 }
 
+table img {
+    width: 50%;
+    height: 50%;
+}
+
 
 

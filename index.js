@@ -11,27 +11,27 @@
     function getData() {
         const education = document.querySelector('.education').value;
         const statement = document.querySelector('.statement').value;
-        const image = document.querySelector('.image').value;
+        const image = document.querySelector('.image').value.replace('C:\\fakepath\\', '');
         const hobbies = document.querySelector('.hobbies').value;
         const data = { education, statement, image, hobbies };
         let dataArray = [];
         dataArray.push(data);
+        console.log(dataArray)
 
         dataArray.forEach((item) => {
             const tr = document.createElement('tr');
-            let image = new Image();
-            image.src = `${item.image}`
+            // let image = new Image();
+            // image.src = `${item.image}`
             const trContent = `
                 <td class='tdata'>${item.education}</td>
                 <td class='tdata'>${item.statement}</td>
-                <td><img src='${image}'></td>
+                <td><img src='images/${image}'></td>
                 <td class ='tdata'>${item.hobbies}</td>
                 <td class='actions'><div class='delete'>Delete profile</div></td>
             `;
             
             tr.innerHTML = trContent;
             tb.appendChild(tr)
-            
         });
 
     }
@@ -43,7 +43,7 @@
         document.body.classList.toggle('dark-theme-variables');
     })
 
-    /*====== HIDE FORM =========*/
+    /*====== SHOW FORM =========*/
     const formHideToggler = document.querySelector(".header--left-1");
 
     formHideToggler.addEventListener('click', () => {
@@ -51,7 +51,7 @@
         document.getElementById("container").style.display="";
     })
 
-    /*====== SHOW FORM =========*/
+    /*====== HIDE FORM =========*/
     const formShowToggler = document.querySelector(".header--left-2");
 
     formShowToggler.addEventListener('click', () => {
